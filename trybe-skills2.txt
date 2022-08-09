@@ -2,3 +2,5 @@ JAVASCRIPT
 Bash
 Unix
 Git
+HTML
+CSS
