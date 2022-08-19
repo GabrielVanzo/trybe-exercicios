@@ -1,3 +1,37 @@
+
+.super-mario {
+    width: 200px;
+  }
+  
+  .goomba {
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: 90px;
+  }
+  
+  .baloon {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    z-index: 1;
+  }
+  
+  .speech {
+    font-size: 25px;
+    top: 580px;
+    left: 70px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .bowser {
+    width: 200px;
+    position: absolute;
+    top: 750px;
+    left: 300px;
+  }
+  
 .caixa {
     color: white;
     display: inline-block;
