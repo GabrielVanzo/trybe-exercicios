@@ -17,5 +17,3 @@ console.log(a / b)
 
 // Módulo
 console.log(a % b)
-
-// EXERCÍCIO 2
