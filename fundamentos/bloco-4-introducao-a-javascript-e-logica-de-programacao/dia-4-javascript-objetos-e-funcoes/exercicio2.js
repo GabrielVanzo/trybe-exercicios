@@ -1,4 +1,4 @@
-// EXERCICIO 2
+// EXERCICIO 2 - OBJETOS E FOR/IN
 
 let info = {
     personagem: 'Margarida',

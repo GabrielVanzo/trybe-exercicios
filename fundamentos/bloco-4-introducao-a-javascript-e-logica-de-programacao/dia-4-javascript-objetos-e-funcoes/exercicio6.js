@@ -1,4 +1,4 @@
-// EXERCICIO 6
+// EXERCICIO 6 - OBJETOS E FOR/IN
 
 let leitor = {
     nome: 'Julia',

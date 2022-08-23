@@ -1,4 +1,4 @@
-// EXERCICIO 8
+// EXERCICIO 8 - OBJETOS E FOR/IN
 
 let leitor = {
     nome: 'Julia',
@@ -13,7 +13,7 @@ let leitor = {
     ],
   };
 
-  leitor.livrosFavoritos.push += {'titulo': 'Harry Potter e o Prisioneiro de Azkaban', 'autor': 'JK Rowling', 'editora': 'Rocco'}
+  leitor.livrosFavoritos[1] = {'titulo': 'Harry Potter e o Prisioneiro de Azkaban', 'autor': 'JK Rowling', 'editora': 'Rocco'}
 
 //   console.log(leitor.livrosFavoritos);
 
