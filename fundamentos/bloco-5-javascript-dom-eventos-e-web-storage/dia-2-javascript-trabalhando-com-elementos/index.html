@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // PARTE 1
+        // 1
+        function addTitle(titletxt) {
+            const title = document.createElement('h1');
+            title.innerText = titletxt;
+            document.body.appendChild(title);
+        } 
+        addTitle('Exercicio 5.2 - JavaScript DOM');
+
+        // 2
+        const menu = document.createElement('main');
+        menu.className = 'main-content';
+        document.body.appendChild(menu);
+
+        // 3
+        const secao = document.createElement('section');
+        secao.className = 'center-content';
+        menu.appendChild(secao);
+
+        // 4
+        const paragraph = document.createElement('p');
+        paragraph.innerText = 'Gabriel Vanzo';
+        secao.appendChild(paragraph);
+
+        // 5
+        const secaoEsq = document.createElement('section');
+        secaoEsq.className = 'left-content';
+        menu.appendChild(secaoEsq);
+
+        // 6
+        const secaoDir = document.createElement('section');
+        secaoDir.className = 'right-content';
+        menu.appendChild(secaoDir);
+
+        // 7
+        const photo = document.createElement('img');
+        photo.className = 'small-image';
+        photo.src = 'https://picsum.photos/200';
+        secaoEsq.appendChild(photo);
+
+        // 8
+        const listUnordered = document.createElement('ul');
+        document.querySelectorAll('section')[2].appendChild(listUnordered);
+        let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let key in numbers) {
+            const listItems = document.createElement('li');
+            listItems.innerHTML = numbers[key];
+            listUnordered.appendChild(listItems);
+        }
+
+        // 9
+        for (let i = 1; i <= 3; i += 1) {
+            const subtitle = document.createElement('h3');
+            subtitle.innerText = 'Contando: ' + i;
+            menu.appendChild(subtitle);
+        }
+
+        // PARTE 2
+        // 1
+        const title = document.getElementsByTagName('h1')[0];
+        title.className = 'title';
+
+        // 2
+        const subtitle = document.getElementsByTagName('h3');
+        for (let i = 0; i < 3; i += 1) {
+            subtitle[i].className = 'Description';            
+        }
+
+        // 3
+        const secaoEsqu = document.getElementsByClassName('left-content')[0];
+        menu.removeChild(secaoEsqu);
+
+        // 4
+        const secaoDire = document.getElementsByClassName('right-content')[0];
+        secaoDire.style.marginRight='auto';
+
+        // 5
+        secaoCenter = document.getElementsByClassName('center-content')[0]
+        secaoCenter.parentNode.style.backgroundColor = 'green'
+
+        // 6
+        const ul = document.getElementsByTagName('ul')[0];
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+    </script>
+</body>
+
+</html>
