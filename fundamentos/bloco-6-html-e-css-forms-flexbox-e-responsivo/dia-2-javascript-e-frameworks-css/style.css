@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+}
+header {
+    margin-left: 10px;
+}
+.form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.form-content {
+    border: 2px solid black;
+}
+.line-content {
+    padding: 10px;
+    margin-left: 10px;
+}
+textarea {
+    width: 70%;
+    height: 250px;
+    resize: none;
+}
+.form-content input[type='text'] {
+    height: 25px;
+}
+.form-content input[type='email'] {
+    height: 25px;
+}
+.form-content input[type='radio'] {
+    width: 20px;
+    height: 20px;
+}
+.line-content input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+.form input[type='submit'] {
+    margin-top: 15px;
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: white;
+}
