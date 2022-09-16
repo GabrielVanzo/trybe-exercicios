@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightcyan;
+}
+
+header {
+  background-color: coral;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+header p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+
+}
+
+nav ul {
+  margin: 0 15px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.asides {
+  display: flex;
+  
+}
+aside {
+  display: flex;
+  flex-flow: column;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.aside-one {
+  margin-left: 15px;
+  border-radius: 10px 0 0 10px;
+}
+
+.aside-two {
+  margin-right: 15px;
+  align-items: flex-end;
+  border-radius: 0 10px 10px 0;
+}
+
+.aside-two h2 {
+  width: 170px;
+}
+
+.aside-two ul{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.main-content {
+  margin: 15px;
+}
+
+.main-content h1 {
+  margin: 15px;
+  font-size: 25px;
+}
+
+.main-content p{
+  background-color: lightblue;
+  padding: 3px 15px;
+
+}
+
+.main-content p:nth-child(2) {
+  padding-top: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.main-content p:nth-child(18) {
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+footer {
+  padding: 15px 25px;
+  background-color: coral;
+}
+
+footer h3 {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  padding: 5px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 829px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .asides{
+    width: 70%;
+    justify-content: center;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .aside-one ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .asides {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .aside-one {
+    width: 700px;
+  }
+
+  .aside-one ul{
+    display: flex;
+    flex-direction: row;
+  }
+  .col1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 10px;
+  }
+  .col3 {
+    display: flex;
+    flex-direction: column; 
+  }
+}
